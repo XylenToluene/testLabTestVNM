@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    font-family: 'Graphik LCG', sans-serif;
+}
+
+
+
+#head{
+    z-index: 1;
+    position: absolute;
+    background-size: cover;
+    background-color: rgb(42, 108, 234);
+    background-blend-mode: overlay;
+    background-image: url(resours/HeaderImg.jpg);
+    width: 100%;
+    height: 100%;
+}
+#company_info{
+    position: relative;
+    display: inline-block;
+    left: 20%;
+}
+#name_company{
+    font-size: 20px;
+    color: #fff;
+    display: inline-block;
+}
+#icon{
+    width: 24px;
+    display: inline-block;
+}
+#header_controls{
+    left: 50%;
+    position: relative;
+    display: inline-block;
+    color: #FFF;
+    z-index: 10;
+}
+.header_controls_button{
+    color: #FFF;
+    display: inline-block;
+    justify-content: center;
+    margin: 0;
+    margin-left: 10px;
+    text-decoration: none;
+}
+#header_controls :hover{
+    text-decoration: underline;
+}
+
+#Headline{
+    position: relative;
+    color: #FFF;
+    font-size: 52px;
+    padding-top: 16%;
+    width: 55%;
+    margin: auto;
+    text-align: center;
+}
+#dop_info{
+    position: relative;
+    color: #FFF;
+    font-size: 18px;
+    padding-top: 2%;
+    padding-bottom: 13%;
+    width: 55%;
+    margin: auto;
+    text-align: center;
+}
+#eazy{
+    position: relative;
+    background-color: #ECEFF2;
+    font-size: 20px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%,-180%);
+    border-radius: 4px;
+    border: none;
+}
+
+#howitworked{
+    margin: 0;
+    position: relative;
+    font-size: 40px;
+    padding-top: 54%;
+    padding-bottom: 6%;
+    text-align: center;
+}
+
+.content_box{
+    position: relative;
+    display: inline-block;
+    width: 18%;
+    justify-content: center;
+    left: 11%;
+    transform: translate(-15%);
+    margin-left: 4%;
+}
+.text_in_box{
+    position: relative;
+    font-size: 14px;
+    width: 80%;
+}
+.tr_bl_box{
+    position: relative;
+    display: inline-block;
+    width: 80%;
+    left: 52.5%;
+    transform: translate(-50%);
+}
+#img_tr_bl{
+    position: relative;
+    display: inline-block;
+    left: 55%;
+    padding-top: 4%;
+    width: 592px;
+    transform: translate(-5%);
+}
+#tr_block{
+    position: absolute;
+    font-size: 32px;
+    padding-top: 10%;
+    text-align: center;
+}
+#txt_tr_block1{
+    position: absolute;
+    text-align: left;
+    width: 42%;
+    margin-top: 18%;
+}
+#txt_tr_block2{
+    position: absolute;
+    text-align: left;
+    width: 42%;
+    margin-top: 23%;
+}
+
+
+.QA{
+    background-color: #F6F8FA;
+}
+#QnA{
+    position: relative;
+    font-size: 40px;
+    padding-top: 2%;
+    width: 55%;
+    margin: auto;
+    text-align: center;
+}
+.wrapper{
+    padding-top: 2%;
+    max-width: 80%;
+    left: 10%;
+    position: relative;
+}
+.wrapper i{
+    top: 50%;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 46px;
+    background:  #F6F8FA;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+.wrapper i:first-child{
+    left: -14px;
+}
+.wrapper i:last-child{
+    right: -14px;
+}
+.wrapper .carusel{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.carusel img{
+    object-fit: cover;
+    width: calc(100% / 3);
+}
+
+.carusel img:first-child{
+    margin-left: 0px;
+}
+
+.podval{
+    position: relative;
+    font-size: 18px;
+    margin-top: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+@media(width < 900px){
+    .carusel img{
+        width: calc(100% / 2);
+    }
+}
+@media(width < 550px){
+    .carusel img{
+        width: 100%;
+    }
+}
+
+@media(width < 1290px){
+    #howitworked {
+        padding-top: 99%;
+    }
+    #img_tr_bl {
+        left: 45%;
+        padding-top: 18%;
+        width: 462px;
+
+    }
+    #txt_tr_block1 {
+        position: absolute;
+        text-align: left;
+        width: 42%;
+        margin-top: 35%;
+    }
+    #txt_tr_block2 {
+        position: absolute;
+        text-align: left;
+        width: 42%;
+        margin-top: 47%;
+    }
+}
+
+@media(width < 768px){
+    #company_info{
+        left: 1%;
+    }
+    #header_controls{
+        left: 28%;
+    }
+
+    #howitworked {
+        padding-top: 167%;
+    }
+
+    #img_tr_bl {
+        left: 50%;
+        padding-top: 18%;
+        width: 362px;
+
+    }
+    #tr_block {
+        padding-top: 4%;
+    }
+    #eazy {
+        margin-top: 25%;
+        width: 29%;
+    }
+
+}
